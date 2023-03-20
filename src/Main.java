@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -82,5 +83,17 @@ public class Main {
         System.out.println("Разница в весе c помощью вычитания " + (secondBoxer - firstBoxer));
         System.out.println("Разница в весе с помощью остатка " + (secondBoxer % firstBoxer)); //Способ по остатку раз. Это выглядит как вычитание меньшего из большего.
         System.out.println("Разница в весе с помощью остатка " + (firstBoxer + secondBoxer) % firstBoxer); // Способ по остатку два. Это выглядит уже поприкольней, но если первый боксер вдруг станет тяжелее, то это не сработает :(
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+        var totalHours  = 640;// Пишем код для задачи 8
+        var hoursPerson = 8;
+        var totalPerson = totalHours / hoursPerson;
+        System.out.println("Всего работников в компании — " + totalPerson + " человек.");
+        var differencePerson = 94;
+        var newHoursPerson = totalHours / (totalPerson + differencePerson);
+        System.out.println("Если в компании работает " + (totalPerson + differencePerson) + " человека, то всего " + newHoursPerson + " часа работы может быть поделено между сотрудниками.");
+
     }
 }
